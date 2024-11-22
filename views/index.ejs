@@ -9,9 +9,9 @@
 <body>
 	<nav>
          <h1>Quora Posts</h1>
-        <button><a href="http://localhost:8080/posts/new">Creat New Post</a></button>
-		<button><a href="http://localhost:8080/about">About</a></button>
-		<button><a href="http://localhost:8080/contact">Contacts</a></button>
+        <button><a href="https://quora-post-or38.onrender.com/posts/new">Creat New Post</a></button>
+		<button><a href="https://quora-post-or38.onrender.com/posts/about">About</a></button>
+		<button><a href="https://quora-post-or38.onrender.com/posts/contact">Contacts</a></button>
 		<button id="dark-mode-toggle">🌙 Dark Mode</button>
 	</nav>
 	 <h2>Welcome to the Quora Post Page</h2>
@@ -21,8 +21,8 @@
 			<h3 class="user">@<%= post.username %> </h3>
 		 	<h4 class="content"><%= post.content %> </h4>
 			<img src="/images/<%= post.userimg %>" class="uerimg" id="userimg" alt="image"><br>
-			<button><a href="http://localhost:8080/posts/<%=post.id%>">See in Detailed</a></button>
-			<button><a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit Post</a></button><br>
+			<button><a href="https://quora-post-or38.onrender.com/posts/<%=post.id%>">See in Detailed</a></button>
+			<button><a href="https://quora-post-or38.onrender.com/posts/<%=post.id%>/edit">Edit Post</a></button><br>
 			<br>
 			<form method="post" action="/posts/<%= post.id %>?_method=DELETE">
 				<button>Delete</button>
@@ -31,7 +31,7 @@
 	<% }%>
 	</div><br>
 	<footer>
-		<a href="http://localhost:8080/posts">@quora-post</a>
+		<a href="https://quora-post-or38.onrender.com/posts">@quora-post</a>
 	</footer>
 	<script src="/app.js"></script>
 
