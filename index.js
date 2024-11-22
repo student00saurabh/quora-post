@@ -4,7 +4,7 @@ const methodOverride = require("method-override");
 
 const multer = require("multer");
 
-const PORT = 3000;
+const port = 3000;
 
 const { v4: uuidv4 } = require("uuid");
 
@@ -176,7 +176,8 @@ app.get("/contact", (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Welcome to Quora Post!');
+   res.render("index.ejs", {posts});
+  
 });
 
 //port is listinning .... to check
