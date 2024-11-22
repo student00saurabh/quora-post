@@ -175,6 +175,10 @@ app.get("/contact", (req, res) => {
   res.render("contact.ejs");
 });
 
+app.get('/', (req, res) => {
+  res.send('Welcome to Quora Post!');
+});
+
 //port is listinning .... to check
 app.listen(port, () => {
   console.log(`Port is listening ${port}`);
