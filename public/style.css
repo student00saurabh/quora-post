@@ -62,11 +62,12 @@ h4,h6{
   --post-bg: teal;
   --post-shado: white;
 }
-
+@media(min-width: 855px){
+  
 h1{
 	color: maroon;
   display: block;
-  margin-right: 500px;
+  margin-right: 480px;
   font-weight: bold;
   transition-duration: 0.8s;
   border-radius: 10px;
@@ -213,4 +214,472 @@ h6,p{
 
 iframe{
   margin: 20px;
+}
+}
+
+
+@media(680px < width < 855px){
+    
+h1{
+	color: maroon;
+  display: block;
+  margin-right: 100px;
+  font-weight: bold;
+  transition-duration: 0.8s;
+  border-radius: 10px;
+  padding: 5px;
+}
+h1:hover{
+  color: darkgreen;
+  text-shadow: 0px 0px 8px white;
+  box-shadow: 0px 2px 8px snow;
+}
+nav{
+  background-color: teal;
+  display: flex;
+  padding: 5px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+nav>button{
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 18px;
+}
+.main-box-2{
+  display: flex;
+  margin-top: 40px;
+}
+.main-box{
+  overflow: auto;
+  margin: 10px;
+  padding: 10px;
+}
+.post{
+	
+	width: 280px;
+  display: inline-block;
+  padding: 10px;
+  padding-left: 40px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 0px;
+  box-shadow: 0px 2px 4px black;
+  transition-duration: 0.8s;
+}
+.post:hover{
+  border: 2px solid teal;
+  background-color: rgb(243, 208, 164);
+}
+a{
+	text-decoration: none;
+}
+#userimg{
+	height: 200px;
+	width: 180px;
+}
+
+input[type="file"]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+input[type="file"]::-ms-browse:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+button{
+  background-color:antiquewhite;
+  color: darkgreen;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid darkgreen;
+  border-radius: 10px;
+  transition-duration: 0.8s;
+}
+button:hover{
+  background-color: teal;
+  color: white;
+  border: 2px solid teal;
+  box-shadow: 0px 2px 8px snow;
+}
+button:hover>a{
+  color: white;
+}
+button>a{
+  text-decoration: none;
+  color: darkgreen;
+}
+footer{
+  padding: 40px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  background-color: teal;
+}
+footer>a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: gray;
+}
+h2{
+  color: darkgreen;
+}
+
+.comment-box{
+  width: 300px;
+  height: 320px;
+   overflow: auto;
+   white-space: nowrap;
+  display: inline-block;
+   border: 2px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 0px;
+  box-shadow: 0px 2px 4px black;
+  transition-duration: 0.8s;
+  padding: 10px;
+}
+.comment-box:hover{
+   border: 2px solid teal;
+  background-color: rgb(243, 208, 164);
+}
+.comment{
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid teal;
+  border-radius: 5px;
+}
+h6,p{
+  padding: 0px;
+  margin: 0px;
+}
+
+iframe{
+  margin: 20px;
+}
+
+}
+
+@media(400px < width <680px){
+      
+h1{
+	color: maroon;
+  font-weight: bold;
+  transition-duration: 0.8s;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  padding: 5px;
+}
+h1:hover{
+  color: darkgreen;
+  text-shadow: 0px 0px 8px white;
+  box-shadow: 0px 2px 8px snow;
+}
+nav{
+  background-color: teal;
+  padding: 5px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+nav>button{
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 18px;
+}
+nav>button>a{
+  font-size: 0.6rem;
+}
+.main-box-2{
+  margin-top: 40px;
+}
+.main-box{
+  overflow: auto;
+  margin: 10px;
+  padding: 10px;
+}
+.post{
+	
+	width: 280px;
+  display: inline-block;
+  padding: 10px;
+  padding-left: 40px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 0px;
+  box-shadow: 0px 2px 4px black;
+  transition-duration: 0.8s;
+}
+.post:hover{
+  border: 2px solid teal;
+  background-color: rgb(243, 208, 164);
+}
+a{
+	text-decoration: none;
+}
+#userimg{
+	height: 200px;
+	width: 180px;
+}
+
+input[type="file"]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+input[type="file"]::-ms-browse:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+button{
+  background-color:antiquewhite;
+  color: darkgreen;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid darkgreen;
+  border-radius: 10px;
+  transition-duration: 0.8s;
+}
+button:hover{
+  background-color: teal;
+  color: white;
+  border: 2px solid teal;
+  box-shadow: 0px 2px 8px snow;
+}
+button:hover>a{
+  color: white;
+}
+button>a{
+  text-decoration: none;
+  color: darkgreen;
+}
+footer{
+  padding: 40px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  background-color: teal;
+}
+footer>a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: gray;
+}
+h2{
+  color: darkgreen;
+}
+
+.comment-box{
+  width: 300px;
+  height: 320px;
+   overflow: auto;
+   white-space: nowrap;
+  display: inline-block;
+   border: 2px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 0px;
+  box-shadow: 0px 2px 4px black;
+  transition-duration: 0.8s;
+  padding: 10px;
+}
+.comment-box:hover{
+   border: 2px solid teal;
+  background-color: rgb(243, 208, 164);
+}
+.comment{
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid teal;
+  border-radius: 5px;
+}
+h6,p{
+  padding: 0px;
+  margin: 0px;
+}
+
+iframe{
+  margin: 20px;
+}
+}
+
+@media(max-width: 400px){
+       
+h1{
+	color: maroon;
+  font-weight: bold;
+  transition-duration: 0.8s;
+  font-size: 0.7rem;
+  border-radius: 10px;
+  padding: 5px;
+}
+h1:hover{
+  color: darkgreen;
+  text-shadow: 0px 0px 8px white;
+  box-shadow: 0px 2px 8px snow;
+}
+nav{
+  background-color: teal;
+  padding: 5px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+nav>button{
+  height: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 18px;
+}
+nav>button>a{
+  font-size: 0.6rem;
+}
+.main-box-2{
+  margin-top: 40px;
+}
+.main-box{
+  overflow: auto;
+  margin: 10px;
+  padding: 10px;
+}
+.post{
+	
+	width: 260px;
+  display: inline-block;
+  padding: 10px;
+  padding-left: 20px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 0px;
+  box-shadow: 0px 2px 4px black;
+  transition-duration: 0.8s;
+}
+.post:hover{
+  border: 2px solid teal;
+  background-color: rgb(243, 208, 164);
+}
+a{
+	text-decoration: none;
+}
+#userimg{
+	height: 200px;
+	width: 180px;
+}
+
+input[type="file"]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+input[type="file"]::-ms-browse:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+button{
+  background-color:antiquewhite;
+  color: darkgreen;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid darkgreen;
+  border-radius: 10px;
+  transition-duration: 0.8s;
+}
+button:hover{
+  background-color: teal;
+  color: white;
+  border: 2px solid teal;
+  box-shadow: 0px 2px 8px snow;
+}
+button:hover>a{
+  color: white;
+}
+button>a{
+  text-decoration: none;
+  color: darkgreen;
+}
+footer{
+  padding: 40px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  background-color: teal;
+}
+footer>a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: gray;
+}
+h2{
+  color: darkgreen;
+}
+
+.comment-box{
+  width: 300px;
+  height: 320px;
+   overflow: auto;
+   white-space: nowrap;
+  display: inline-block;
+   border: 2px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 0px;
+  box-shadow: 0px 2px 4px black;
+  transition-duration: 0.8s;
+  padding: 10px;
+}
+.comment-box:hover{
+   border: 2px solid teal;
+  background-color: rgb(243, 208, 164);
+}
+.comment{
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid teal;
+  border-radius: 5px;
+}
+h6,p{
+  padding: 0px;
+  margin: 0px;
+}
+
+iframe{
+  margin: 20px;
+}
 }
