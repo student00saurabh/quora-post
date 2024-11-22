@@ -4,7 +4,7 @@ const methodOverride = require("method-override");
 
 const multer = require("multer");
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 const { v4: uuidv4 } = require("uuid");
 
