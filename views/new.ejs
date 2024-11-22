@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Creat New Post</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<nav>
+         <h1>Quora Posts</h1>
+        <button><a href="http://localhost:8080/posts/new">Creat New Post</a></button>
+		<button><a href="http://localhost:8080/about">About</a></button>
+		<button><a href="http://localhost:8080/contact">Contacts</a></button>
+		<button id="dark-mode-toggle">🌙 Dark Mode</button>
+	</nav>
+	<h1>Creat a new post</h1>
+	<form method="post" action="/posts" enctype="multipart/form-data">
+		 <input type="file" name="userimg" required /><br><br>
+		<input type="text" name="username" placeholder="Enter username"><br><br>
+		<textarea rows="10" cols="35" name="content" placeholder="Write your post"></textarea><br><br>
+        <button>Submit</button>
+	</form>
+
+	<script src="/app.js"></script>
+
+</body>
+</html>

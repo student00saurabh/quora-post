@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<nav>
+         <h1>Quora Posts</h1>
+        <button><a href="http://localhost:8080/posts/new">Creat New Post</a></button>
+		<button><a href="http://localhost:8080/about">About</a></button>
+		<button><a href="http://localhost:8080/about">Contacts</a></button>
+		<button id="dark-mode-toggle">🌙 Dark Mode</button>
+	</nav>
+	<h1>Here is Your post in detailed</h1>
+	<p>post id: <%= post.id %></p>
+	<div class="main-box-2">
+		<div class="post">
+		   <h3 class="user">@<%=post.username%></h3>
+		    <h4 class="content"><%=post.content%></h4>
+		     <img src="/images/<%= post.userimg %>" alt="image" id="userimg">
+	   </div>
+	    <div class="comment-box">
+		    <h4>Comments</h4>
+		    <% for(comment of post.comments){ %>
+                <div class="comment">
+			       <h6>@<%= comment.ctname %></h6>
+			        <p><%= comment.ct %></p>
+		         </div>
+		    <% } %>
+		    <form method="post" action="/posts/<%= post.id %>">
+		        <input type="text" name="ctname" id="ctname" placeholder="Enter your name"><br>
+		        <textarea name="ct" id="ct" placeholder="Write comment here"></textarea>
+		         <button type="submit">Add Comment</button>
+		    </form>
+	   </div>
+	</div>
+
+
+	<script src="/app.js"></script>
+
+</body>
+</html>
