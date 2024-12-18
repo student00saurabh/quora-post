@@ -4,7 +4,7 @@ const methodOverride = require("method-override");
 
 const multer = require("multer");
 
-const port = 8080;
+const port = 3000;
 
 const { v4: uuidv4 } = require("uuid");
 
@@ -173,6 +173,11 @@ app.get("/about", (req, res) => {
 app.get("/contact", (req, res) => {
   console.log("contact");
   res.render("contact.ejs");
+});
+
+app.get('/', (req, res) => {
+   res.render("index.ejs", {posts});
+  
 });
 
 //port is listinning .... to check
